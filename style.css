@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: rgb(215, 134, 247);
+    color: rgb(8, 3, 12);
+}
+
+
+section {
+    width: 100%;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    text-align: center;
+}
+
+header {
+    background: linear-gradient(135deg, #ff2b10, #ffdf28);
+    padding: 16px;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header .logo {
+    font-size: 40px; 
+    font-weight: bold;
+    color: #fff;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 8px; 
+}
+
+header nav ul li {
+    margin: 0 24px; 
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ffeb3b;
+}
+
+.hero {
+    background: url('hero.jpg') no-repeat center center/cover;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 32px;
+}
+
+.hero h2 {
+    font-size: 48px; 
+    margin-bottom: 16px; 
+}
+
+.hero p {
+    font-size: 19px; 
+    margin-bottom: 16px;
+}
+
+.homebutton {
+    background: #ffd700;
+    color: #333;
+    padding: 12px 24px; 
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.homebutton:hover {
+    transform: scale(1.1);
+}
+
+
+#products {
+    background: #f5da43e5;
+}
+
+#products h2 {
+    font-size: 40px; 
+    color: #ff6f00;
+    margin-bottom: 32px; 
+}
+
+
+.productlist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px; 
+}
+
+.productitem {
+    width: 250px;
+    padding: 24px;
+    border-radius: 10px;
+    background: #ff6f00;
+    color: #fff;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.productitem img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 16px;
+}
+
+.productitem:hover {
+    transform: translateY(-5px);
+}
+
+
+#services {
+    padding: 64px 32px; 
+    background: #ffe0b2;
+    text-align: center;
+}
+
+#services h2 {
+    font-size: 40px; 
+    color: #ff6f00;
+    margin-bottom: 32px; 
+}
+
+.serviceslist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px; 
+}
+
+.serviceitem {
+    background: #fff;
+    border-radius: 10px;
+    padding: 32px; 
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.serviceitem img {
+    width: 50px;
+    margin-bottom: 16px; 
+    transition: transform 0.3s;
+}
+
+.serviceitem h3 {
+    font-size: 24px; 
+    color: #ff6f00;
+    margin: 8px 0; 
+}
+
+.serviceitem p {
+    color: #555;
+    font-size: 14px; 
+    line-height: 1.4;
+}
+
+.serviceitem:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background: #ffecb3;
+}
+
+.serviceitem:hover img {
+    transform: rotate(10deg) scale(1.1);
+}
+
+
+#gallery {
+    padding: 64px 32px;
+    background: #e1f5fe;
+}
+
+#galleryhead {
+    font-size: 40px; 
+    color: #ff6f00;
+    text-align: center;
+    margin-bottom: 32px; 
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 200px;
+    height: 150px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#contact {
+    padding: 64px 32px;
+    background: #f0f4c3;
+}
+
+#contacthead {
+    font-size: 40px; 
+    color: #ff6f00;
+    text-align: center;
+    margin-bottom: 32px; 
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form button {
+    background: #ff5722;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #e64a19;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    background: #333;
+    color: #fff;
+    padding: 16px;
+} 
